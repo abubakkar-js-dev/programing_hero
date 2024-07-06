@@ -1,0 +1,7 @@
+input[type="password"]{
+    color: tomato;
+}
+input[type="email"]{
+    color: green;
+    background-color: yellow;
+}

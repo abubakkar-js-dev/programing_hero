@@ -1,0 +1,37 @@
+.header{
+    color: white;
+    background-color: tomato;
+    font-family: Helvetica;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+}
+.experi-wrap{
+    color: gray;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    width: 60%;
+    
+}
+.experi{
+    padding: 10px;
+}
+.ex-1{
+    background-color: aqua;
+    
+}
+.ex-2{
+    background-color: peru;
+}
+.ex-3{
+    background-color: aquamarine;
+}
+.ex-4{
+    color: black;
+    background-image: url("https://www.shutterstock.com/image-photo/smartphone-tablet-pc-mock-on-260nw-1287357250.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

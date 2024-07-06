@@ -1,0 +1,17 @@
+.wrap{
+    width: 50%;
+    color: white;
+    background-color: burlywood;
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px 4px gray;
+}
+.wrap h4{
+    text-align: center;
+}
+img{
+    width: 500px;
+    background-repeat: repeat;
+}

@@ -1,0 +1,15 @@
+ol{
+    color: black;
+    background-color: cornsilk;
+    padding: 10px;
+    /* display: inline-block; */
+
+}
+ol li{
+    color: tomato;
+    background-color: aqua;
+    margin: 2px 0px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: verdana;
+}
