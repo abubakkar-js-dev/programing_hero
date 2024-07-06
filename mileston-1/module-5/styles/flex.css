@@ -1,0 +1,29 @@
+/* .flex-info-wrap{
+    width: 580px;
+    height: 400px;
+    margin: 80px auto;
+  
+} */
+.flex-container{
+    margin: auto;
+    width: 580px;
+    height: 400px;
+    background-color: burlywood;  
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.item{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    background-color: aqua;
+    width: 100px;
+    height: 60px;
+}
