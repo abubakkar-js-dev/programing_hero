@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Five</title>
+    <style>
+        .news-wrap{
+            padding: 30px;
+        }
+        .news-item{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(246, 248, 246);
+            padding: 40px;
+        }
+        .news-img{
+            width: 100%;
+        }
+        .news-img img{
+            width: 100%;
+        }
+        @media screen and (min-width:768px) {
+            /* .news-wrap:last-child{
+                flex-direction: row-reverse;
+            } */
+            .news-item{
+                flex-direction: row;
+            }
+            .news-item-2{
+                flex-direction: row-reverse;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- newspaper start -->
+     <div class="news-wrap">
+        <div class="news-item">
+            <div class="news-img">
+                <img src="./images/graudenz2.JPG" alt="Picture">
+            </div>
+            <div class="news-content">
+                <h3 class="news-title">Why do we use it?</h3>
+                <p class="news-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime blanditiis rem aliquam obcaecati amet eaque asperiores aperiam omnis. Dolore, esse voluptates? Nulla sit necessitatibus repellat, veniam non porro! Dignissimos, impedit!
+                    <p class="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit corrupti, totam natus earum aperiam nisi iusto alias magnam veritatis reiciendis non, tempore, doloribus laboriosam illo ipsa aut aspernatur nobis porro?</p>
+                </p>
+            </div>
+        </div>
+        <div class="news-item news-item-2">
+            <div class="news-img">
+                <img src="./images/graudenz3.JPG" alt="Nothing">
+            </div>
+            <div class="news-content">
+                <h3 class="news-title">What are the advantage of it?</h3>
+                <p class="news-desc">
+                    Consectetur eum id, maiores ullam quasi recusandae molestias saepe quam pariatur possimus eligendi laudantium? Expedita odit, ullam doloremque quaerat magnam corrupti in esse numquam accusantium consectetur deleniti ex doloribus eaque!
+                    <p class="news-desc">Incidunt non, sint ipsum porro ducimus vel animi rerum ut architecto recusandae aliquam consectetur quasi eos reiciendis eaque deleniti, ipsam dolores distinctio! Quas libero nam delectus quo accusamus non dolor.</p>
+                </p>
+            </div>
+        </div>
+     </div>
+    <!-- newspaper end -->
+</body>
+</html>

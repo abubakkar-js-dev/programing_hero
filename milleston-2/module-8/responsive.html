@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media queries</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .card{
+            /* height: 600px; */
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+            border-radius: 9px;
+            box-shadow: 2px 4px 10px gray;
+        }
+
+        .card button{
+            padding: 10px 20px;
+            margin: 20px 0 ;
+            border: none;
+            background-color: tan;
+            color: white;
+            border-radius: 3px;
+        }
+        .card button:hover{
+            background-color: rgb(199, 163, 116);
+        }
+        @media  screen and (min-width:768px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+            .card{
+                text-align: left;
+            }
+        }
+        @media  screen and (min-width:992px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+            }
+            .card{
+                text-align: left;
+            }
+        }
+        @media  screen and (min-width:1200px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 20px;
+            }
+            .card{
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ut aliquam ea expedita doloremque ipsam, sapiente aliquid veniam quam doloribus omnis rerum! Praesentium, ratione. Quam, similique? Eos doloribus deserunt quis!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Ad accusantium ut, animi quos sit iure! Debitis, tempora quae rem nobis tempore velit illo ex accusamus magni blanditiis minima culpa cum iusto quos, maxime iste ratione odio impedit eligendi!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Laboriosam, hic quasi atque natus cum illum ut ex soluta culpa aut vero velit, ducimus officia autem sunt eum sit nemo itaque! Quasi et soluta non eaque sit inventore doloribus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Vero magnam dolorem numquam distinctio molestias recusandae reprehenderit perspiciatis iste omnis, reiciendis quia quos possimus repellat aspernatur blanditiis sapiente obcaecati et quod voluptatibus culpa quam ducimus maxime! Ipsam, eos esse!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Adipisci, unde! Nemo repellendus optio sit, officiis natus facilis, exercitationem enim accusamus consequuntur ea, cumque possimus laboriosam blanditiis voluptas alias dolore delectus ad omnis est aut. Quos tempora quisquam veritatis.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Eaque quibusdam accusantium deserunt repudiandae? Molestiae, aut recusandae. In, exercitationem? Ipsam, temporibus laboriosam! Molestias provident consectetur maiores doloribus veritatis, corrupti quia necessitatibus illum odio culpa perspiciatis repellendus facilis rem maxime.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Ad id tempore corporis ipsum suscipit perspiciatis rem aliquid, non eveniet iure veniam cupiditate culpa exercitationem similique veritatis error enim, dolor consectetur rerum libero quam illo. Sint eveniet asperiores nulla.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Adipisci facilis sint debitis itaque doloribus fuga expedita odio consequatur labore assumenda suscipit, dolor a nam nemo beatae eaque excepturi pariatur? Tempore dignissimos nemo, iure necessitatibus a sed quas. Perspiciatis?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Reiciendis sequi exercitationem quasi fugiat iste esse itaque sint corporis, fugit aliquid et cumque earum? Distinctio, nesciunt enim eligendi, et id culpa in facere voluptate magni cumque, tempora eos hic!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Vitae, facilis, ullam commodi doloribus quos dolor saepe asperiores veritatis nulla quia eligendi. Consequatur eveniet dolorum, dignissimos perspiciatis magni unde ab neque magnam nemo aperiam quaerat soluta. Officia, doloremque assumenda?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Mollitia, totam ea! Ad in at ea vel explicabo nemo ipsum, dolore iusto deserunt aliquid sunt quasi eligendi maxime voluptatem sapiente reiciendis distinctio autem itaque vitae ipsa id nobis! Sed?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/images.jpg" alt="">
+            <h2>London Street Food</h2>
+            <p>Facere possimus aperiam sint repellendus sequi eaque dolorum temporibus beatae. Iste, ex similique impedit veritatis iusto incidunt id ipsa ducimus cum est possimus sunt? Eum aliquam neque eligendi libero fugiat!</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

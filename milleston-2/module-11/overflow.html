@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow in css</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 35px;
+        }
+        .box{
+            border: 2px solid tomato;
+            padding: 20px;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .box,.text-overflow{
+            border-radius: 4px;
+        }
+        .text-overflow{
+            width: 200px;
+            height: 16px;
+            padding: 5px;
+            border: 2px solid red ;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .a{
+            /* width: 300px; */
+            padding: 10px;
+            border: 2px solid red;
+            border-radius: 4px;
+            white-space: pre;            
+        }
+ 
+    </style>
+</head>
+    <body>
+   
+    <p class="a">
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. 
+        Ipsa temporibus id tempore 
+        quae fugiat odit 
+        provident laudantium 
+        vel itaque eum?
+    </p>
+    <div class="container">
+        <div class="box box-1">
+            <h2>This is title</h2>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, similique, praesentium eos suscipit obcaecati voluptatum vero doloremque eum blanditiis optio cum maxime. Cumque modi totam odio labore. Labore distinctio id similique, debitis saepe voluptatem deserunt ipsa rem impedit, vel atque libero dolor quia nihil ducimus voluptas voluptatum a, fugiat dicta ad! Facilis, unde exercitationem? Modi excepturi enim maxime facere quam eligendi incidunt minima iusto deserunt necessitatibus ab magnam alias, quisquam sint minus, nihil beatae nam est mollitia praesentium. Necessitatibus ipsam blanditiis modi impedit debitis aspernatur assumenda dolorem minima numquam commodi totam veritatis neque fugit odio fugiat suscipit corporis dicta cupiditate nobis, mollitia quibusdam? Nemo numquam animi sequi dignissimos laudantium! Magni, at voluptatum. At cupiditate, doloremque optio nihil quasi voluptatem nobis laboriosam nostrum, corrupti ducimus labore aperiam veniam laborum ad sequi error obcaecati, placeat aut veritatis illum architecto iusto saepe beatae nesciunt. Repellendus, quos earum quo repudiandae libero sit autem aspernatur aperiam facere provident ducimus sunt adipisci neque debitis. Quia veniam, aspernatur accusamus aut culpa ducimus asperiores quis quos suscipit reiciendis impedit deleniti animi, dolor nemo sapiente quaerat, dolorem laborum omnis nulla incidunt repudiandae optio voluptate similique blanditiis! Provident, maiores voluptas fuga, dolores hic rerum laboriosam distinctio sed debitis architecto assumenda.</P>
+        </div>
+        <div class="box box-2">
+            <h2>This is title</h2>
+            <P>Ipsam quisquam aspernatur nam illum commodi modi assumenda corporis eos maiores repudiandae id, suscipit porro dolorem perspiciatis iste repellat voluptates neque ratione esse laborum consequatur et. Dolorem ratione adipisci, reiciendis dicta aliquid eligendi quisquam nulla voluptas tempora modi ut est asperiores iure id accusamus placeat, cumque sit qui tempore. Rerum beatae quidem tempore aliquid minima aut illo neque excepturi eveniet vero quia ipsa similique animi a ab nulla iste, eum repellendus fuga. Quas ullam ad porro maxime eligendi, reprehenderit, sapiente dolorum harum voluptas quam suscipit, laudantium sunt inventore facere amet blanditiis ipsum sit rem omnis? Ratione sed velit maxime distinctio soluta deleniti accusamus nobis? Porro ex error minima et perferendis non molestias repellendus? Illum exercitationem deserunt perferendis iure pariatur? Exercitationem impedit nihil dolores inventore, vel ipsam. Nesciunt recusandae maxime cumque ad. Ipsum nostrum fuga quam voluptatibus. Quibusdam beatae, quidem deleniti maxime dolorem ullam voluptatum sint in reprehenderit consectetur dolores impedit culpa et omnis similique ex sapiente, quasi odit tempore temporibus quo? Suscipit minima ea est repudiandae similique nisi repellat qui. Saepe vero odit assumenda, nobis perspiciatis consectetur ut, possimus ducimus tempore sunt itaque, iusto libero animi natus? Fuga maiores, aliquid, odio commodi iusto est omnis porro officia, corporis enim deleniti!</P>
+        </div>
+        
+    </div>
+    <p class="text-overflow" title="       Lorem, ipsum dolor sit amet consectetur adipisicing elit">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+</body>
+</html>

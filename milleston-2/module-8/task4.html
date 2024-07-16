@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task four</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            background-color: rgba(208, 218, 226,0.7);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+        }
+        .card .card-img{
+            width: 100%;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card .card-content{
+            width: 100%;
+        }
+        .btn{
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 25px;
+        }
+        .btn:hover{
+            background-color: rgb(233, 191, 191);
+        }
+        .card-content h3{
+            margin-bottom: 18px;
+        }
+
+
+
+        @media screen and (min-width: 768px) {
+            .card{
+                flex-direction: row;
+                
+            }
+            .card .card-img{
+            width: 30%;
+        }
+            .card img{
+                width: 100%;
+            }
+            .card .card-content{
+                width: 70%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="./images/graudenz16.JPG" alt="Nothing">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Post Tiltle Will Be Here</h3>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum rem error quibusdam sint sed libero consequatur harum quia consequuntur.</p>
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="./images/graudenz18.JPG" alt="Nothing"></div>
+            <div class="card-content">
+                <h3 class="card-title">Post Tiltle Will Be Here</h3>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum rem error quibusdam sint sed libero consequatur harum quia consequuntur.</p>
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

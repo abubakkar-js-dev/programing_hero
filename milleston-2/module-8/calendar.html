@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            background-color: rgba(167,0,0,0.6);
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            /* grid-template-rows: repeat(5fr,30px); */
+            row-gap: 30px;
+            column-gap: 40px;
+            padding: 50px;
+        }
+        .date,.day{
+            height: 50px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        .day{
+            background-color: antiquewhite;
+        }
+        .today{
+            border: 5px solid aqua;
+        }
+        @media  screen and (max-width: 576px) {
+            .container{
+                width: 100%;
+                row-gap: 10px;
+                column-gap: 15px;
+                padding: 20px;
+
+
+            }
+            .date,.day{
+            height: 40px;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+        }
+        @media  screen and (max-width:763px) {
+            .container{
+                width: 90%;
+                row-gap: 15px;
+                column-gap: 15px;
+                padding: 25px;
+
+
+            }
+            .date,.day{
+            height: 45px;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+        }
+        @media  screen and (max-width:992px) {
+            .container{
+                width: 90%;
+                row-gap: 20px;
+                column-gap: 18px;
+                padding: 28px;
+
+
+            }
+            .date,.day{
+            height: 48px;
+            font-size: 20px;
+            border-radius: 4.8px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date today">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+    </div>
+</body>
+</html>
