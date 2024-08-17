@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2>Introduction of Tailwindcss</h2>
+    <p>
+      Tailwindcss is Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Accusamus possimus enim ab inventore aliquam repellat deleniti blanditiis
+      aspernatur accusantium sit?
+    </p>
+    <section
+      class="border border-purple-500 m-4 rounded shadow-md tracking-wider"
+    >
+      <h3
+        class="text-lg text-red-400 font-semibold text-center sm:text-left uppercase"
+      >
+        Subtitle
+      </h3>
+      <h1
+        class="text-red-500 text-5xl mb-2 italic font-black text-center sm:text-left uppercase"
+      >
+        This is a large text
+      </h1>
+      <p class="text-base p-4 m-2 bg-slate-300 mt-3 rounded-md leading-">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ea
+        dolor blanditiis asperiores sint, pariatur obcaecati accusamus vitae
+        dolores tempora recusandae veniam velit quisquam nam eaque amet natus
+        itaque ducimus.
+      </p>
+    </section>
+    <div
+      class="size-20 bg-purple-500 hover:bg-cyan-700 my-5 mx-auto hover:cursor-pointer rounded-full transition-colors duration-200"
+    ></div>
+    <div
+      class="h-8 bg-gradient-to-r from-purple-500 from-10% via-slate-400 via-20% to-cyan-500 to-80%"
+    ></div>
+    <article
+      class="w-11/12 sm:w-1/2 mx-auto mt-5 rounded-b-lg bg-slate-200 px-5 py-3"
+    >
+      <p class="text-base text-gray-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        voluptatum, quod rem harum quibusdam error doloremque consequatur
+        tenetur vel. Corporis provident facere maiores id aliquam accusantium et
+        quia, natus quibusdam cum aliquid officiis nam porro veritatis odit
+        illum quas asperiores, placeat saepe, earum eius? Non, beatae maiores,
+        eaque sed facere doloribus, et libero fugit fugiat tempore ipsum
+        ducimus. Hic explicabo, consequuntur blanditiis quos repudiandae vero
+        aut, ipsam, laborum magni dolore ad repellat. Odit laboriosam eligendi,
+        dignissimos id culpa aperiam cupiditate repellendus nam eius corporis!
+        Earum est at autem voluptates, quas doloremque saepe possimus
+        accusantium tempora itaque, fugiat exercitationem laudantium dolores.
+      </p>
+    </article>
+    <div
+      class="w-1/2 h-100 flex space-x-14 justify-center bg-slate-300 rounded-md my-4 mx-auto p-3"
+    >
+      <div class="h-14 basis-1/4 bg-cyan-400 rounded-md"></div>
+      <div class="h-14 basis-2/4 bg-cyan-400 rounded-md"></div>
+      <div class="h-14 basis-1/4 bg-cyan-400 rounded-md"></div>
+      <!-- <div class="h-14 bg-cyan-400 rounded-md"></div> -->
+    </div>
+
+    <h2 class="text-3xl text-center my-4 mt-10 text-gray-600 font-bold">Understanding the flex layout</h2>
+    <div
+      class="sm:w-1/2 flex  gap-5  flex-col sm:flex-row bg-slate-300 rounded-md my-4 mx-auto p-3 "
+    >
+      <div class="h-14 p-3 bg-cyan-400 rounded-md text-center text-gray-500 text-xl flex items-center justify-center">item 1</div>
+      <div class="h-14 p-3 bg-cyan-400 rounded-md text-center text-gray-500 text-xl flex items-center justify-center flex-1">item 2</div>
+      <div class="h-14 p-3 bg-cyan-400 rounded-md text-center text-gray-500 text-xl flex items-center justify-center">item 3</div>
+      <!-- <div class="h-14 bg-cyan-400 rounded-md"></div> -->
+    </div>
+    <section class="mt-8">
+        <h2 class="text-3xl text-gray-500 text-center mb-4">Understanding Grid Layout</h2>
+        <div class="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 1</div>
+          <div class="md:col-span-2 bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 2</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 3</div>
+          <div class="lg:col-span-3 bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 4</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 5</div>
+          <div class="md:col-span-2 sm:row-span-3 bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 6</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 7</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 8</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 9</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 10</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 11</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 12</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 13</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 14</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 15</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 16</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 17</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 18</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 19</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 20</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 21</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 22</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 23</div>
+          <div class="bg-indigo-400 border border-2 rounded-md flex items-center justify-center p-3 text-gray-700">item - 24</div>
+        </div>
+    </section>
+  </body>
+</html>
