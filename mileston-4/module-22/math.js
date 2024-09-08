@@ -1,0 +1,16 @@
+// console.log(Math.PI);
+// console.log(Math.pow(2,4));
+// console.log(Math.floor(3.554));
+// console.log(Math.round(3.543));
+// console.log(Math.round(3.343));
+// console.log(Math.ceil(2.5434));
+// console.log(Math.ceil(6.13));
+// console.log(Math.random() * 6);
+const random = Math.random() * 6;
+console.log(Math.floor(random));
+console.log(Math.abs(8-4));
+console.log(Math.abs(4-8));
+let num = Math.max(1,2,4,6,6,4,2,4,9,2,5,22222);
+let num2 = Math.min(1,2,4,6,6,4,2,4,9,2,5,22222);
+console.log(num);
+console.log(num2);
