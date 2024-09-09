@@ -23,3 +23,21 @@ function fullName(first,second){
 
 const full = fullName('Abu','Bakkar');
 console.log(full);
+
+
+function getPrice(product){
+    if(typeof product !== 'object'){
+        return 'Please give a object'
+    }
+    const price = product.price;
+    return price; 
+}
+
+
+let phone = {
+    brand: "vivo",
+    price: "25000",
+}
+
+const phonePrice = getPrice(phone);
+console.log(phonePrice);
