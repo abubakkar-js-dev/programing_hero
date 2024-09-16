@@ -1,0 +1,14 @@
+h1{
+    color: lightcoral;
+
+}
+h2{
+    color: lightblue;
+}
+li{
+    color: tomato;
+}
+
+.bg-light-green{
+    background-color: rgb(119, 205, 119);
+}
