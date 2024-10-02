@@ -1,0 +1,19 @@
+Optional chaining in javascript:
+
+Optional chain uses in a object .if property has undefined then the optional chain will be stop at her specific potion. 
+optional chain uses with ? mark.
+
+example :
+
+const user2 = {
+    id: 5002,
+    name: 'pori bibir majar',
+    address: {
+        city: 'chittagong',
+        coutntry: 'Bangladesh',
+    }
+}
+
+// acces the second street no.
+
+console.log(user2.address.street?.second);
