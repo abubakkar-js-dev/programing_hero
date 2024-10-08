@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble in javascript</title>
+</head>
+<body>
+<section id="section-container">
+    <h2>Exploring Event Bubbles</h2>
+    <ul id="ul-list">
+        <li id="item-1">Lorem, ipsum dolor.</li>
+        <li id="item-2">Adipisci, enim quam!</li>
+        <li id="item-3">Necessitatibus, odio asperiores.</li>
+        <li id="item-4">Eveniet, itaque amet.</li>
+        <li id="item-5">Fugiat, unde sint?</li>
+        <li id="item-6">Expedita, voluptas minus.</li>
+    </ul>
+</section>
+
+    <script>
+        document.getElementById('item-2').addEventListener('click',function (event){
+           event.stopImmediatePropagation();
+            console.log('hello world!');
+            
+        })
+        document.getElementById('item-2').addEventListener('click',function (event){
+            console.log('hello world 2!');
+            
+        })
+        document.getElementById('item-2').addEventListener('click',function (event){
+            console.log('hello world 3!');
+            
+        })
+        document.getElementById('ul-list').addEventListener('click',function(){
+            console.log('Ul list clicked');
+        })
+        document.getElementById('section-container').addEventListener('click',function(){
+            console.log('Full section container Clicked');
+        })
+    </script>
+</body>
+</html>

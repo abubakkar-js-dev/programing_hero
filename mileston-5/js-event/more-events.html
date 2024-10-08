@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more js events</title>
+</head>
+<body>
+    <h1>Explore more events</h1>
+    <button id="btn">Events</button>
+    <input id="input-field" type="text">
+
+
+    <script>
+        // document.getElementById('input-field').addEventListener('focus',function(){
+        //     console.log('Hello world by focus on input field');
+        // })
+        // document.getElementById('input-field').addEventListener('blur',function(){
+        //     console.log('Hello world by blur on input field');
+        // })
+        // document.getElementById('btn').addEventListener('mouseover',function(){
+        //     console.log('Hello world by mouse hover');
+        // })
+        document.getElementById('input-field').addEventListener('keypress',function(){
+            // console.log('Sathi Bokaxoda Down maira geche.');
+            var keypressValue = event.target.value;
+            console.log(keypressValue);
+        })
+        
+        // document.getElementById('input-field').addEventListener('keyup',function(){
+        //     console.log('Sathi Bokaxoda Up hoiya geche.');
+        // })
+    </script>
+</body>
+</html>

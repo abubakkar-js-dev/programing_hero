@@ -1,0 +1,79 @@
+1. What is javascript?
+    Ans: Javascript is JIT compiled multi peradigm prototype based dynamically typed programming language.
+2. Javascript excutes code with v8 engine.
+3. Js context : *. global context, *. funtional context.
+4.Exucutional Context:
+    *. An excutional context is an environment.
+    *. Inside the excutional context a piece of Javascript code gets executed.
+    *. Variables, parameters and other information related to the piece of code get.
+
+5. Global Exucutional Context:
+    When the JavaSript engine receives a script file, it first create a default Exucutional Context known as the Global Execution Context(GEC).
+    *. GEC is the base/default Exectution Context.
+    *. All JavaSript code that is not Inside of a function gets executed.
+    *. For every JavaSript file, there can only be one GEC. 
+
+6.Functional Exectution Context:
+     Whenever a function is called the Javascript engine creat a different type of Execution context known as a Function Ececution Context(FEC).
+    * Every time a funtion is called, a new Exectution context is created for that function.
+    *. Each function has its own execution context.
+    *. Since every function call gets its own FEC, there can be more than one FEC in the run time of a script.
+
+7. Phase: The execution context is created two Phase,
+     *.Creation Phase, 
+     *. Exectution Phase
+
+8. Creation Phase: Creation Phase is the phase in which the JS engine has called a funtion but its Exectution has not started.
+    *. JS engine is the the function code to compilation phase
+    *. it jsut scans over the function code to compile the code.
+    *. It doesnt't execute any code.
+
+9. Execution Phase: During the execution phase, the JavaSript engine executes the code line by line
+    *. assigns the values to variable, and
+    *. executes the function calls.
+
+10. Call Stack:
+    *. The call stack is used by javascript top keep track of multiple function calls.
+    *. In order to manage the execution context, the JavaSript engine uses a call stack.
+
+11. Single-Threaded:
+    *. Single-threaded means only one statement is executed at a time.
+    *. JavaScript only has one call stack.
+    *. JavaSript runs code line by line.
+    *. Must finish executing a piece of code before moving into the next.
+
+12. What do you mean by Syncronous?
+    *. 
+
+13.Promies:
+    The Promies object represents the eventual completetion (or failure) of an asynchronous operation and its resulting value. A Promise is in one of these states:
+    *. Pending: initial state, neither fulfilled nor rejected.
+    *. Resolve: the operation was completed succesfully.
+    *. Rejected: the operation failed. 
+    
+14. Fetch API
+    *. The fetch() method start the process of fetching a resource from a server.
+    *. The fetch() method returns a Promise that resolves to a Response object.
+    *. A fetch() method only rejects when a network error is encountered.
+
+15. Async Method:
+    *. setTimeOut() - One time exucute after specific times. 
+    *. setInterval()  - Execute like loop. it can be stop using clearInterval(). 
+    *. clearInterval() - clear the interval.
+
+16. Call Stack:
+    *. Keepts track of all the operations in line to be executed.
+    *. Whenever a function is finished, it is popped from the stack.
+
+17. Event Queue: 
+    *. Sends new functions to the stack for processing.
+    *. Follows the queue data structure.
+    *. Maintains the correct sequence in which all operations should be sent for execution.
+
+18. Try...catch
+    *. The try statement defines a code block to run(to try).
+    *. The catch statement defines a code block to any error.
+    *  The finally will be execute any time(finally).
+    *. The throw statement defines a custom error.
+    *. You can throw an exception (throw an error)
+    *.The exception can be a String, a number, a Boolean and an object.

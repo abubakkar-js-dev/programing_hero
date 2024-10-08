@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Conformation</title>
+    <style>
+        #secrate-info{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Github Delete Conformation</h1>
+    <div id="secrate-info">
+        <h2>My Secrat Information</h2>
+        <p>Secrat information Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos veniam dolor quis doloremque inventore voluptas optio soluta et laborum.</p>
+    </div>
+    <div class="delete-section">
+        <input type="text" name="delete" id="input-field">
+        <button  id="delete-btn" disabled>delete</button>
+    </div>
+    
+
+    <!-- <script>
+        document.getElementById('input-field').addEventListener('keyup',function(event){
+            if(event.target.value === "delete"){
+                const deleteBtn = document.getElementById('delete-btn');
+                deleteBtn.removeAttribute('disabled');
+            }else{
+                document.getElementById('delete-btn').setAttribute('disabled',true)
+            }
+        })
+
+        document.getElementById('delete-btn').addEventListener('click',function(){
+            const secrateInfo = document.getElementById('secrate-info');
+            secrateInfo.style.display = "none";
+        })
+    </script> -->
+    <script src="./js/github-delete.js"></script>
+</body>
+</html>

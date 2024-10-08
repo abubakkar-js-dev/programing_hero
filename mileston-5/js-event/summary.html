@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events summary</title>
+</head>
+<body>
+    <h2>Different ways to handle events in javascript</h2>
+    <h3 id="subtitle">Sub Title</h3>
+    <p>Data from input box: <span id="input-data"></span></p>
+    <input type="text" name="update" id="input-box" placeholder="write somethings">
+    <button id="update-btn">update</button>
+    <br>
+    <br>
+    <button onclick="handleByOnclick()">By Onclick</button>
+    <button id="listener-btn">By Add Event Listener</button>
+    <p>Count: <span id="countClick">0</span></p>
+    <script>
+        let count = 0;
+        function handleByOnclick(){
+            count++;
+            document.getElementById('countClick').innerText = count;
+            document.getElementById('subtitle').innerText = "Bla Bla Bla";
+        }
+        const listenerBtn = document.getElementById('listener-btn');
+        listenerBtn.addEventListener('click',function(){
+            document.getElementById('subtitle').innerText = "Text changed by add event listener";
+            count++;
+            document.getElementById('countClick').innerText = count;
+            
+        });
+
+        const updateBtn = document.getElementById('update-btn');
+
+        console.log(updateBtn);
+        updateBtn.addEventListener('click',function(){
+            const inputBox = document.getElementById('input-box');
+            const inputDataP = document.getElementById('input-data');
+            const inputValue = inputBox.value;
+            inputDataP.innerText = inputValue;
+            inputBox.value = '';
+        })
+
+        
+    </script>
+</body>
+</html>
